@@ -6,8 +6,6 @@ version := "1.0"
 
 lazy val `lambdauz` = (project in file(".")).enablePlugins(PlayScala, PlayAkkaHttp2Support, SbtWeb)
 
-(projectTestFile in typescript) := Some("tsconfig.test.json")
-
 scalacOptions ++= CompilerOptions.cOptions
 
 Global / onChangedBuildSource := ReloadOnSourceChanges
@@ -26,8 +24,6 @@ resolvers ++= Seq(
   Resolver.typesafeRepo("releases"),
 )
 resolveFromWebjarsNodeModulesDir := true
-
-(projectTestFile in typescript) := Some("tsconfig.test.json")
 
 libraryDependencies ++= rootDependencies ++ Seq(jdbc, ehcache, ws, specs2 % Test, guice)
 
