@@ -20,6 +20,8 @@ object Dependencies {
     val playWebjars = "2.8.0-1"
     val jquery = "3.5.1"
     val bootstrap = "4.5.0"
+    val reactJs = "16.5.2"
+    val typeReact = "15.0.34"
   }
 
   object Libraries {
@@ -32,6 +34,8 @@ object Dependencies {
     val jsonJoda = "com.typesafe.play" %% "play-json-joda" % Versions.jsonJoda
     val pureConfig = "com.github.pureconfig" %% "pureconfig" % Versions.pureConfig
     val scalaTestPlus = "org.scalatestplus.play" %% "scalatestplus-play" % Versions.scalaTestPlus % Test
+    val reactJs = "org.webjars" % "react" % Versions.reactJs
+    val typeReact = "org.webjars.npm" % "types__react" % Versions.typeReact
     val playMailerLibs = Seq(
       "com.typesafe.play" %% "play-mailer" % Versions.playMailer,
       "com.typesafe.play" %% "play-mailer-guice" % Versions.playMailer
@@ -68,7 +72,9 @@ object Dependencies {
     Libraries.fs2Experimental,
     Libraries.jsonJoda,
     Libraries.pureConfig,
-    Libraries.scalaTestPlus
+    Libraries.scalaTestPlus,
+    Libraries.reactJs,
+    Libraries.typeReact
   ) ++
     Libraries.playMailerLibs ++
     Libraries.logLibs ++
