@@ -5,15 +5,24 @@
     "moduleResolution": "node",
     "removeComments": true,
     "sourceMap": true,
-    "mapRoot": "/assets",
-    "sourceRoot": "/assets",
+    "mapRoot": "/assets/typescripts",
+    "sourceRoot": "./assets/typescripts",
     "baseUrl": ".",
     "paths": {
       "*": [
         "*",
-        "target/web/node-modules/main/webjars/*"
+        "node_modules/@types/node/*",
+        "node_modules/typedoc/node_modules/typescript/lib/lib.dom.d"
       ]
     },
+    "skipLibCheck": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch":true,
+    "preserveConstEnums": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
